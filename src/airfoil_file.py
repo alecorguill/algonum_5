@@ -1,7 +1,7 @@
 import numpy as np;
 import re; # regexp
-import matplotlib.pyplot as ma;
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt;
+from os import path;
 
 ################################################################
 # Airfoil : load profile of a wing
@@ -32,7 +32,9 @@ def load_foil(file):
     iy = np.array(map(lambda t: float(t[1]),intra))
     return(ex,ey,ix,iy)
 
-(ex,ey,ix,iy) = load_foil("aq16.dat")
+fn = path.relpath("../aq16.dat")
+print(fn)
+(ex,ey,ix,iy) = load_foil(fn)
 
 plt.plot(ex,ey)
 plt.show()
