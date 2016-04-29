@@ -32,9 +32,11 @@ def load_foil(file):
     iy = np.array(map(lambda t: float(t[1]),intra))
     return(ex,ey,ix,iy)
 
-fn = path.relpath("../aq16.dat")
-print(fn)
-(ex,ey,ix,iy) = load_foil(fn)
 
+(ex,ey,ix,iy) = load_foil("../ag16.dat")
+'''
 plt.plot(ex,ey)
+plt.xlim([0,1])
+plt.ylim([-0.3,0.3])
 plt.show()
+'''
