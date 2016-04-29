@@ -35,10 +35,11 @@ def lagrange(f,b,e,l):
             res += f(tab_x[i])*lagrange_i(tab_x,i)
         return res
     return f
+'''
 f_1 = lagrange(np.exp,0,10,100000)
 tab_x = np.arange(0,10,0.1)
 tab_y = [f_1(x) for x in tab_x]
 print(tab_y)
 plt.plot(tab_x,tab_y)
 plt.show()
-
+'''
