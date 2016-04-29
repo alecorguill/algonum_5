@@ -3,7 +3,7 @@ import math as ma
 
 
 
-def splint(xa, ya, ya2, n, x, y):
+def splint(xa, ya, ya2, n, x):
     """
     Given the array xa and ya, wich tabulate a function and given the array ya2, which is the output from spline above
     Given a value of x
