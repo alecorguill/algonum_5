@@ -2,19 +2,12 @@ import numpy as np
 import math as ma
 
 
-<<<<<<< Updated upstream
-
 def splint(xa, ya, ya2, n, x):
     """
     Given the array xa and ya, wich tabulate a function and given the array ya2, which is the output from spline above
     Given a value of x
     Returns a cubic-spline interpolated value y
     """
-
-=======
-#
-def splint(xa, ya, ya2, n, x, y):
->>>>>>> Stashed changes
     klo = 1
     khi = n
     while (khi - klo > 1):
