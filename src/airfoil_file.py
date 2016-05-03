@@ -11,6 +11,8 @@ from os import path;
 # Every line not containing a couple of floats is discarded.
 # Returns a couple constitued of the list of points of the
 # extrados and the intrados.
+
+
 def load_foil(file):
     f = open(file, 'r')
     matchline = lambda line: re.match(r"\s*([\d\.-]+)\s*([\d\.-]+)", line)
@@ -32,9 +34,10 @@ def load_foil(file):
     iy = np.array(map(lambda t: float(t[1]),intra))
     return(ex,ey,ix,iy)
 
-fn = path.relpath("../aq16.dat")
+fn = path.abspath("../ag16.dat")
 print(fn)
 (ex,ey,ix,iy) = load_foil(fn)
 
+plt.gca().set_autoscale_on(False)
 plt.plot(ex,ey)
 plt.show()

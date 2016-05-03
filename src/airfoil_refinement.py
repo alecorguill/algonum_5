@@ -2,6 +2,7 @@ import numpy as np
 import math as ma
 
 
+<<<<<<< Updated upstream
 
 def splint(xa, ya, ya2, n, x):
     """
@@ -10,6 +11,10 @@ def splint(xa, ya, ya2, n, x):
     Returns a cubic-spline interpolated value y
     """
 
+=======
+#
+def splint(xa, ya, ya2, n, x, y):
+>>>>>>> Stashed changes
     klo = 1
     khi = n
     while (khi - klo > 1):
