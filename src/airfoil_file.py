@@ -33,12 +33,3 @@ def load_foil(file):
     ix = np.array(map(lambda t: float(t[0]),intra))
     iy = np.array(map(lambda t: float(t[1]),intra))
     return(ex,ey,ix,iy)
-
-plt.gca().set_autoscale_on(False)
-
-(ex,ey,ix,iy) = load_foil("../ag16.dat")
-
-plt.plot(ex,ey)
-plt.xlim([0,1])
-plt.ylim([-0.3,0.3])
-plt.show()
