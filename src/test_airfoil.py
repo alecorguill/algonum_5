@@ -27,8 +27,8 @@ def curve_below(f, l, h):
         return (1 - l) * f(x) - l * 3 * h
     return c
 
-c_e = [curve_above(e_f, i, 0.1) for i in np.arange(0, 1, 0.075)]
-c_i = [curve_below(i_f, i, 0.05) for i in np.arange(0, 1, 0.15)]
+c_e = [curve_above(e_f, i, 0.1) for i in np.arange(0, 1, 0.0075)]
+c_i = [curve_below(i_f, i, 0.05) for i in np.arange(0, 1, 0.015)]
 
 for c_ei in c_e:
     c_x = np.linspace(0, 1, 200)

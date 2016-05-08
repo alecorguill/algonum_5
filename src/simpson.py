@@ -25,7 +25,7 @@ def simpson(f, a, b):
     :param b:
     :return:
     """
-    n = 50000
+    n = 1000
     s = 0.
     l = 1.0 * (b - a) / n
     for i in range(0, n - 1):
