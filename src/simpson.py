@@ -29,7 +29,7 @@ def simpson(f, a, b):
     s = 0.
     l = 1.0 * (b - a) / n
     for i in range(0, n - 1):
-        s += simpson_div(f, a+l * i,a+ l * (i + 1))
+        s += simpson_div(f, a + l * i, a + l * (i + 1))
     return s
 
 # print simpson(lambda x: 2, 0, 4)
