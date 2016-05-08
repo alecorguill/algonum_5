@@ -27,4 +27,4 @@ def pressure_map(n):
     plt.imshow(m, interpolation='none', cmap='hot')
     plt.show()
 
-pressure_map(1000)
+#pressure_map(1000)

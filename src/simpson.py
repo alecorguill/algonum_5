@@ -17,7 +17,7 @@ def simpson_div(f, a, b):
     return (d / 8.) * (y_val[0] + 3 * y_val[1] + 3 * y_val[2] + y_val[3])
 
 
-def simpson(f, a, b):
+def simpson(f, a, b,n):
     """
 
     :param f:
@@ -25,9 +25,8 @@ def simpson(f, a, b):
     :param b:
     :return:
     """
-    n = 50000
-    s = 0.
-    l = 1.0 * (b - a) / n
+    s = 0
+    l = float(b-a)/n
     for i in range(0, n - 1):
         s += simpson_div(f, a + l * i, a + l * (i + 1))
     return s
