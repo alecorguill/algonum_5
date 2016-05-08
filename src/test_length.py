@@ -13,5 +13,5 @@ i_n = len(ix)
 e_f = cubic_spline_interpolate_f(ex, ey, e_n, 1e30, 1e30)
 i_f = cubic_spline_interpolate_f(ix, iy, i_n, 1e30, 1e30)
 
-print l.length_spline(e_f, s.simpson, 0, 1)
-print l.length_spline(i_f, s.simpson, 0, 1)
+#print l.length_spline(e_f, s.simpson, 0, 1,50000)
+#print l.length_spline(i_f, s.simpson, 0, 1,50000)
