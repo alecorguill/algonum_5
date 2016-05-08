@@ -6,7 +6,7 @@ from math import *
 import numpy as np
 
 
-def length_spline(f, f_integr, begin, end,n):
+def length_spline(f, f_integr, begin, end, n):
     """
     Calcule la longueur de la courbe d'une fonction sur un intervalle donné
     :param f: fonction dont on évalue la longueur de la courbe
@@ -19,6 +19,7 @@ def length_spline(f, f_integr, begin, end,n):
         return sqrt(1 + pow(d.derivate(f)(x), 2))
 
     return f_integr(g, begin, end,n)
+
 
 def semi_cercle(x):
     return np.sqrt(1-x**2)

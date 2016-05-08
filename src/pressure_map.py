@@ -28,7 +28,7 @@ def spline_array(i_f, e_f):
 
 
 def spline_length_array(sps):
-    return [ls.length_spline(sps[i], s.simpson, 0, 1) for i in range(0, len(sps))]
+    return [ls.length_spline(sps[i], s.simpson, 0, 1, 2000) for i in range(0, len(sps))]
 
 
 def pixel_val_e(x, y, sps, sps_l):
