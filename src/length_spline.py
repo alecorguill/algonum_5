@@ -3,6 +3,7 @@
 import derivation as d
 import simpson as s
 from math import *
+import numpy as np
 
 
 def length_spline(f, f_integr, begin, end):
@@ -19,5 +20,8 @@ def length_spline(f, f_integr, begin, end):
 
     return f_integr(g, begin, end)
 
+def semi_cercle(x):
+    return np.sqrt(1-x**2)
 
-# print length_spline(lambda x: 3*x**2 - 2*x + 3, s.simpson, 0, 1)
+
+#print length_spline(semi_cercle,s.simpson, -1, 1-1e-8)

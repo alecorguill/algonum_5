@@ -25,11 +25,11 @@ def simpson(f, a, b):
     :param b:
     :return:
     """
-    n = 10000
+    n = 50000
     s = 0.
     l = 1.0 * (b - a) / n
     for i in range(0, n - 1):
-        s += simpson_div(f, l * i, l * (i + 1))
+        s += simpson_div(f, a+l * i,a+ l * (i + 1))
     return s
 
 # print simpson(lambda x: 2, 0, 4)
