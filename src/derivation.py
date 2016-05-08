@@ -11,7 +11,7 @@ def derivate_func(h):
         return g
     return derivate_core
 
-derivate = derivate_func(10e-5)
+derivate = derivate_func(1e-8)
 
 
 

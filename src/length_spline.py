@@ -5,7 +5,6 @@ import simpson as s
 from math import *
 
 
-
 def length_spline(f, f_integr, begin, end):
     """
     Calcule la longueur de la courbe d'une fonction sur un intervalle donné
@@ -21,4 +20,4 @@ def length_spline(f, f_integr, begin, end):
     return f_integr(g, begin, end)
 
 
-#print length_spline(, s.simpson, 0, 1)
+# print length_spline(lambda x: 3*x**2 - 2*x + 3, s.simpson, 0, 1)

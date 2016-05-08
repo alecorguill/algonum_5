@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt;
 
 
-ex, ey, ix, iy = af.load_foil('../5.dat')
+ex, ey, ix, iy = af.load_foil('../HOR20.dat')
 
 e_n = len(ex)
 i_n = len(ix)
