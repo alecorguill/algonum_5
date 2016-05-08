@@ -5,7 +5,7 @@ from airfoil_file import *
 
 plt.gca().set_autoscale_on(False)
 
-(ex, ey, ix, iy) = load_foil("../HOR20.dat")
+(ex, ey, ix, iy) = load_foil("../goe144.dat")
 
 e_n = len(ex)
 i_n = len(ix)
@@ -19,6 +19,7 @@ ix2 = np.linspace(ix[0], ix[i_n - 1], 10 * i_n)
 iy2 = [i_f(x) for x in ix2]
 
 plt.plot(ex, ey, 'o', ix, iy, 'o', ex2, ey2, '-', ix2, iy2, '-')
-plt.xlim([-0.2, 1.2])
-plt.ylim([-0.3, 0.3])
+
+plt.xlim([0.0, 1.0])
+plt.ylim([-0.02, 0.1])
 plt.show()

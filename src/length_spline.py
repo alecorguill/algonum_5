@@ -20,4 +20,4 @@ def length_spline(f, f_integr, begin, end):
     return f_integr(g, begin, end)
 
 
-print length_spline(lambda x: 2 * x, s.simpson, 0, 1)
+# print length_spline(lambda x: 2 * x, s.simpson, 0, 1)
