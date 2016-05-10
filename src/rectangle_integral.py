@@ -2,11 +2,11 @@ import numpy as np
 
 def rectangle(f,a,b,n):
     res=0
-    for i in range(n):
-        res=res+(b-a)*1.0/n*f(a+i*(b-a)*1.0/n)
+    for i in np.arange(a,b,n):
+        res=res+n*f(i)
     return res
 
 """def f(x):
-    return x*x
+    return x*x+5*x-2
 
-print(rectangle(f,0,1,1000))"""
+print(rectangle(f,0,10,0.01))"""
